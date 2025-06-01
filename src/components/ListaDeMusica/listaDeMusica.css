@@ -1,0 +1,48 @@
+.lista-container {
+  padding: 2em;
+  color: var(--light-grey);
+}
+
+.lista-musicas {
+  list-style: none;
+  padding: 0;
+}
+
+.musica-item {
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5vw;
+}
+
+.musica-item .musica-titulo {
+  width: 25vw;
+}
+
+.musica-item button {
+  background-color:var(--light-purple);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.musica-item button:hover {
+  background-color: rgb(126, 122, 177);
+}
+
+.add-new-list {
+  background-color: var(--dark-purple);
+  color: var(--light-grey);
+  border: 0.1vw solid var(--light-purple);
+}
+
+.add-new-list:hover {
+  background-color: rgb(126, 122, 177);
+}

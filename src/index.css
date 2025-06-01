@@ -1,0 +1,53 @@
+:root {
+  --light-grey: rgb(221, 220, 222);
+  --yellow: #f2dc5d;
+  --orange: #f2a359;
+  --dark-orange: #db9065;
+  --red: #a4031f;
+  --light-purple: #535bf2;
+  --dark-purple-menu: #240b36;
+  --dark-purple:rgb(17, 7, 52);
+  --main-layout-margin: 6vw;
+}
+
+@font-face {
+  font-family: 'PlaywriteHU';
+  src: url('/font/PlaywriteHU-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/font/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/font/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/font/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/font/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/font/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

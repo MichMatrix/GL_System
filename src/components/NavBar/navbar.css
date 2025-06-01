@@ -1,0 +1,142 @@
+/* menu functionality */
+
+nav.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 5vw;
+  background-color: var(--dark-purple-menu);
+  transition: width 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 0;
+  align-items: center;
+  z-index: 10;
+}
+
+
+nav.sidebar.expanded {
+  width: 14vw;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 1em;
+  font-family: 'PlaywriteHU', sans-serif;
+}
+
+.logo {
+  width: 2.7vw;
+}
+
+.logo h3 {
+  width: 2vw;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  column-gap: 1.1vw;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 0.3vw 1vw;
+  font-weight: 600;
+}
+
+.menu-items:hover {
+  background-color: var(--light-grey);
+  border-radius: 0.2vw;
+  color: var(--dark-purple-menu);
+}
+
+.menu-items img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.pin-button {
+  margin: 0.2vw 0 3vw 0;
+  background-color: transparent;
+  color: var(--light-grey);
+  border: 0.1vw solid var(--light-grey);
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 0.4vw;
+  font-size: 1.2vw;
+  transition: background-color 0.3s;
+}
+
+.pin-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 11vw;
+    height: 11vw;
+  }
+
+  nav.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: var(--dark-purple-menu);
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    z-index: 100;
+    padding: 0;
+  }
+
+  nav.sidebar.expanded {
+    width: 70vw;
+    padding: 1em;
+  }
+
+  .menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 101;
+    background-color: var(--dark-purple-menu);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .logo-container,
+  .nav-list,
+  .pin-button {
+    display: ${(isExpanded || isPinned) ? 'flex' : 'none'};
+  }
+
+  .menu-items {
+    font-size: 1.2rem;
+  }
+
+  .menu-items img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .pin-button {
+    font-size: 1rem;
+    border-width: 1px;
+  }
+}

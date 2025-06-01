@@ -1,0 +1,88 @@
+/* components/JanelaDeApresentacao/janelaDeApresentacao.css */
+
+.janela-apresentacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 17, 48, 0.97);
+  color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.letra-musica {
+  font-size: 3.9vw;
+  line-height: 5.7vw;
+  max-width: 80%;
+  height: 60vh;           
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  margin: 2rem 0;
+  text-align: center;
+  white-space: pre-line;
+  font-family:'Roboto', system-ui, Helvetica;
+  text-transform: uppercase;
+}
+
+.botoes-navegacao {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.botoes-navegacao button {
+  background-color: var(--dark-purple);
+  color: white;
+  border: 0.2vw solid  var(--light-purple);
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botoes-navegacao button:hover {
+  background-color: #3a3ad6;
+}
+
+.botoes-navegacao button {
+  display:flex;
+  align-items: center;
+  column-gap: 0.5vw;
+}
+
+.arrow {
+  width: 1.8vw;
+  height: 1.8vw;
+}
+
+@media (max-width: 768px) {
+  .letra-musica {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .botoes-navegacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .botoes-navegacao button {
+    column-gap: 3vw;
+  }
+
+}
