@@ -22,7 +22,7 @@ function ListaDeMusica({ onProjetar }) {
   };
 
   const adicionarNaLista = () => {
-    const nomeLista = '1dejunho';
+    const nomeLista = 'Nova Lista Do Domingo ';
     const listaAtual = listas[nomeLista] || [];
     const novasMusicas = [...new Set([...listaAtual, ...musicasSelecionadas])];
     setListas({ ...listas, [nomeLista]: novasMusicas });
