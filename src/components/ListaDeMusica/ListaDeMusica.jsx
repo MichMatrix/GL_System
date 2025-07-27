@@ -61,14 +61,16 @@ function ListaDeMusica({ onProjetar }) {
           </li>
         ))}
       </ul>
+      
+      <div className='list-action-options'>
+        <button className="btn" onClick={adicionarNaLista}>
+          Adicionar à Lista "1dejunho"
+        </button>
 
-      <button className="btn" onClick={adicionarNaLista}>
-        Adicionar à Lista "1dejunho"
-      </button>
-
-      <button className="btn" onClick={toggleMostrarListas}>
-        {mostrarListas ? 'Ocultar Minhas Listas' : 'Ver Minhas Listas'}
-      </button>
+        <button className="btn" onClick={toggleMostrarListas}>
+          {mostrarListas ? 'Ocultar Minhas Listas' : 'Ver Minhas Listas'}
+        </button>
+      </div>
 
       {mostrarListas && (
         <VerMinhasListas

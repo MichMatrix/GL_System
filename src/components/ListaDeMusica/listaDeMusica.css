@@ -46,3 +46,8 @@
 .add-new-list:hover {
   background-color: rgb(126, 122, 177);
 }
+
+.list-action-options button{
+  margin-right: 1.2vw;
+  margin-bottom: 1.6vw;
+}
