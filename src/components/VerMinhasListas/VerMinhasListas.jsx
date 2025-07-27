@@ -1,5 +1,5 @@
 import React from 'react';
-import '../listaDeMusica/listaDeMusica.css';
+import '../ListaDeMusica/listaDeMusica.css';
 
 function VerMinhasListas({ listas, musicas, onProjetar, onRemoverDaLista }) {
   return (
