@@ -45,18 +45,18 @@ function NavBar() {
         onMouseEnter={!isMobile ? toggleMenu : undefined}
         onMouseLeave={!isMobile ? toggleMenu : undefined}
       >
-        <div className="logo-container">
+        <div className={`logo-container ${isExpanded || isPinned ? 'visible' : ''}`}>
           <img className="logo" src={logo} alt="logo" />
           {(isExpanded || isPinned) && <h3>GL</h3>}
         </div>
 
-        <div className="nav-list">
+        <div className={`nav-list ${isExpanded || isPinned ? 'visible' : ''}`}>
           <p className="menu-items"><img src={home} alt="home-page" />{(isExpanded || isPinned) && 'Home'}</p>
           <p className="menu-items"><img src={favorite} alt="favorite" />{(isExpanded || isPinned) && 'Favoritas'}</p>
           <p className="menu-items"><img src={pesquisar} alt="pesquisar" />{(isExpanded || isPinned) && 'Pesquisar'}</p>
         </div>
 
-        <button className="pin-button" onClick={togglePin}>
+        <button className={`pin-button ${isExpanded || isPinned ? 'visible' : ''}`} onClick={togglePin}>
           {isPinned ? 'Desafixar' : 'Fixar'}
         </button>
       </nav>

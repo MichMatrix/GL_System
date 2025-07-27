@@ -119,13 +119,7 @@ nav.sidebar.expanded {
     border-radius: 6px;
     cursor: pointer;
   }
-
-  .logo-container,
-  .nav-list,
-  .pin-button {
-    display: ${(isExpanded || isPinned) ? 'flex' : 'none'};
-  }
-
+  
   .menu-items {
     font-size: 1.2rem;
   }
